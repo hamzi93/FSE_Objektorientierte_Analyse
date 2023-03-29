@@ -1,0 +1,35 @@
+@startuml Uni
+class Person {
+    -phone_number : string
+    -email : string
+    +get_phone_number() : string
+    +get_email() : string
+}
+
+class Student {
+    -matriculation_number : string
+    -average_grade : float
+    +get_matriculation_number() : string
+    +get_average_grade() : float
+}
+
+class Professor {
+    -salary : float
+    +get_salary() : float
+}
+
+class Address {
+    -street : string
+    -postal_code : string
+    -country : string
+    +get_street() : string
+    +get_postal_code() : string
+    +get_country() : string
+}
+
+Person "1" *.. "1" Address
+
+Student --|> Person
+Professor --|> Person
+
+@enduml

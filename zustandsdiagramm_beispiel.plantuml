@@ -1,0 +1,5 @@
+@startuml On
+[*] --> Off
+Off --> On : powerOn()
+On --> Off : powerOff()
+@enduml

@@ -1,0 +1,36 @@
+@startuml Videothek
+class Customer {
+  -customer_id : int
+  -password: string
+  -balance : float
+  +get_customer_id() : int
+  +get_balance() : float
+  +update_balance(amount : float) : void
+}
+
+class Movie {
+  -movie_name : string
+  -price : float
+  +get_movie_name() : string
+  +get_price(): float
+}
+
+class StreamingServer {
+  -server_name: string
+  +generate_link(movie : Movie, customer : Customer) : string
+}
+
+class VideoLibrary {
+  -customers : List<Customer>
+  -movies : List<Movie>
+  -streaming_server : StreamingServer
+  +register_customer(customer : Customer) : void
+  +add_movie(movie : Movie) : void
+  +rent_movie(movie : Movie, customer : Customer) : string
+}
+
+StreamingServer --|> VideoLibrary
+VideoLibrary *-- Customer : contains
+VideoLibrary *-- Movie : contains
+
+@enduml

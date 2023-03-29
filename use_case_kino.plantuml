@@ -1,0 +1,15 @@
+@startuml Kino
+left to right direction
+skinparam packageStyle rectangle
+actor Besucher
+actor Kassierer
+rectangle Kino {
+  Besucher -- (Kassa Zahlung)
+  Besucher -- (Karten Vorbestellen)
+  Besucher -- (Knabberspaß kaufen)
+  (Kassa Zahlung) <.> (Knabberspaß kaufen) : communicate
+  (Kassa Zahlung) -- Kassierer
+  (Kassa Zahlung) .> (Bar Zahlung) : extends
+  (Kassa Zahlung) .> (Kreditkarten Zahlung) : extends
+}
+@enduml
