@@ -153,11 +153,11 @@ es wird das Verhalten eines Systems modelliert, indem der Zustand des Systems un
 
 **Beispiel:** Ein simpler Zustandsautomaten mit nur zwei Zuständen: `Off` und `On`. Der Automat startet im Zustand `Off`. Wenn der Benutzer die Stromversorgung einschaltet, wechselt der Automat in den Zustand `On`.
 
-![zustandsdiagramm_beispiel](images\zustandsdiagramm_beispiel.png)
+![zustandsdiagramm_beispiel](images/zustandsdiagramm_beispiel.png)
 
 ## Use-Case Diagramm 1
 
-![uml_01](images\uml_01.PNG)
+![uml_01](images/uml_01.PNG)
 
 **Interpretation:** Das Use-Case Diagramm zeigt verschiedene Anwendungsfälle (Use-Cases) eines Online-Shops. Weiters zeigt es die verschiedenen Akteure, die mit dem System interagieren. 
 
@@ -167,7 +167,7 @@ es wird das Verhalten eines Systems modelliert, indem der Zustand des Systems un
 
 ## Use-Case Diagramm 2
 
-![uml_02](images\uml_02.PNG)
+![uml_02](images/uml_02.PNG)
 
 **Interpretation:** Das Use-Case Diagramm zeigt verschiedene Anwendungsfälle (Use-Cases) eines Online-Bestellservices. 
 
@@ -217,13 +217,13 @@ Die Videothek unterstützt das Ausleihen von Filmen für registrierte Kunden. Da
 
 ## Klassendiagramm 4
 
-![klassendiagramm_interpretieren](images\klassendiagramm_interpretieren.png)
+![klassendiagramm_interpretieren](images/klassendiagramm_interpretieren.png)
 
 Interpretation: 
 
 ## Sequenzdiagramm 1
 
-![sequenz_interpretieren](images\sequenz_interpretieren.png)
+![sequenz_interpretieren](images/sequenz_interpretieren.png)
 
 Interpretation:
 
