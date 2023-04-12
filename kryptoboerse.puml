@@ -1,0 +1,23 @@
+@startuml Kontext
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+LAYOUT_LEFT_RIGHT()
+title Containerdiagramm Krypto
+
+SHOW_PERSON_OUTLINE()
+Person(personAlias, "Benutzer", "Besucher oder angemeldet")
+Container(Webbrowser, "Webbrowser", "stellt die Seite dar")
+System_Boundary(Kryptobörse, "Kryptobörse"){
+Container(springboot, "SpringBoot", "Technology", "Verwaltung von Front- und Backend")
+Container(webserver, "Tomcat", "Webserver", "Führt Webanwendung aus")
+Container(database, "H2", "Datenbank", "Verwaltung von Daten")
+}
+
+
+Rel(Webbrowser, springboot, "sendet Anfragen")
+Rel(personAlias, Webbrowser, "benutzt")
+Rel(springboot, webserver, "benutzt")
+Rel(springboot, database, "liest Daten aus")
+@enduml
+

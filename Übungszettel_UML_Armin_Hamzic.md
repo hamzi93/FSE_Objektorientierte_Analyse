@@ -60,7 +60,7 @@ Checklist:
 1. Stakeholder bestimmen
 2.  Akteure bestimmen
 3. Systemkontext festlegen (Schnittstellen)
-4.  Benutzerziele identifi
+4.  Benutzerziele identifizieren
 5.  Detailierungsgrad bestimmen
 6.  Use Case Diagramm erstellen 
 7. Use Case beschreiben 
@@ -79,7 +79,7 @@ Mock ups- und Wireframes; Mockup = Wegwerf Prototyp (klickbar, aber ohne Funktio
 
 ## Anforderungsanalyse Mit User Stories und Epics
 
-**Grundlagen Epic:** Epics enthalten die Vision, die Strategie oder die Ziele eines Unternehmens und gelten als Leitfaden für die Entwicklung von Features. Sie werden normalerweise in User Stories unterteilt, diese wiederum besitzen die Details, um das Epic umzusetzen. Man kann also sagen, dass ein Epic ein größerer Arbeitsaufwand ist, der in kleineren Stücken unterteilt werden kann (wichtig für agiles Projektmanagement). Weiters sollten Epics Priorität haben, um sicherzustellen, dass die wichtigsten Arbeiten zuerst durchgeführt werden. Im Laufe der Zeit können sich Epics ändern, wenn zum Beispiel: neue Informationen oder Anforderungen bekannt werden. Es ist wichtig, dass Epics flexibel bleiben und Änderungen berücksichtigen können.
+**Grundlagen Epic:** Epics enthalten die Vision, die Strategie oder die Ziele eines (Unternehmens) Systems und gelten als Leitfaden für die Entwicklung von Features. Sie werden normalerweise in User Stories unterteilt, diese wiederum besitzen die Details, um das Epic umzusetzen. Man kann also sagen, dass ein Epic ein größerer Arbeitsaufwand ist, der in kleineren Stücken unterteilt werden kann (wichtig für agiles Projektmanagement). Weiters sollten Epics Priorität haben, um sicherzustellen, dass die wichtigsten Arbeiten zuerst durchgeführt werden. Im Laufe der Zeit können sich Epics ändern, wenn zum Beispiel: neue Informationen oder Anforderungen bekannt werden. Es ist wichtig, dass Epics flexibel bleiben und Änderungen berücksichtigen können.
 
 **Grundlagen User Stories:** Eine User Story ist eine kurze Beschreibung einer Funktion, die der Benutzer benötigt, um ein bestimmtes Ziel zu erreichen. User Stories werden in der Regel in der Sprache des Benutzers formuliert und sind aus seiner Perspektive geschrieben. Sie sind ein wichtiges Instrument im agilen Projektmanagement und dienen dazu, die Anforderungen an eine Software oder ein Produkt zu definieren und zu priorisieren. 
 
@@ -92,10 +92,6 @@ Drei Elemente einer User Story:
 Weiters sollten User Stories klein genug sein, um in einem Sprint abschließen zu können. Sie sollten auch testbar sein, so dass es möglich ist, zu überprüfen, ob sie erfolgreich umgesetzt wurden. Die Akzeptanzkriterien sollten klar definiert werden, um sicherzustellen, dass die Umsetzung der User Story den Anforderungen entspricht. Man kann im Laufe des Projekts verschiedene User Stories aktualisieren oder ergänzen (z.B: wenn neue Informationen oder Anforderungen bekannt werden). Ein wichtiger Punkt ist, dass alle Stakeholder, einschließlich des Entwicklerteams und des Kunden, an der Erstellung und Überprüfung von User Stories beteiligt sind, um zu sehen ob die Anforderungen umsetzbar sind.
 
 Formel für das schreiben von User Stories: **Als [Kundentyp] [möchte] ich, [damit]**...
-
-Form einer User Story mit Beispiel:
-
-(Hier ein Screenshot von User Story aus Syp).
 
 **Grundlagen Theme:** Ein Theme ist ein zusammen gefasster Begriff, der mehrere Epics oder Stories zusammenfasst. Themes dienen dazu, eine gemeinsame Idee bzw. gemeinsame Vision zu beschreiben. Epics, Stories und Themes sollten regelmäßig priorisiert werden, um die wichtigsten Anforderungen zuerst umzusetzen.
 
@@ -121,20 +117,20 @@ beschreibt die Klassen und ihre Beziehungen in einem Softwaresystem. Durch Recht
 
 ### Sequenzdiagramm
 
-dient zur Interaktionen zwischen den Objekten eines Softwaresystems auf zeitlicher Basis. Besteht aus verschiedenen Elementen darunter sind: Objekte, Lebenslinien, Aktivitäten und Nachrichten. Hilft bei der Visualisierung des Verhaltens eines Softwaresystems auf zeitlicher Basis. Es kann zur Identifizierung von Problemen und zur Optimierung von Abläufen beitragen, bevor die Software implementiert wird.
+dient zur Interaktionen zwischen den Objekten eines Softwaresystems auf zeitlicher Basis (Modellierung von dynamischen Zusammenhängen von Systemen). Besteht aus verschiedenen Elementen darunter sind: Objekte, Lebenslinien, Aktivitäten und Nachrichten. Hilft bei der Visualisierung des Verhaltens eines Softwaresystems auf zeitlicher Basis. Es kann zur Identifizierung von Problemen und zur Optimierung von Abläufen beitragen, bevor die Software implementiert wird.
 
-**Einsatzzweck:** Ähnlich wie Klassendiagramm kann es in verschiedenen Phasen der Softwareentwicklung nützlich sein. Anforderungsanalyse = Anforderungen an das System besser verstehen; Entwurf = Design des Softwaresystems modellieren; Test = sehen ob die Objekte im System korrekt interagieren und die gewünschte Funktionalität erreicht wurde.
+**Einsatzzweck:** Ähnlich wie Klassendiagramm kann es in verschiedenen Phasen der Softwareentwicklung nützlich sein. Anforderungsanalyse = Anforderungen an das System besser verstehen; Entwurf = Design des Softwaresystems modellieren; Test = sehen ob die Objekte im System korrekt interagieren und die gewünschte Funktionalität erreicht wurde. Es liefert die genaueste Darstellung von Abläufen in Systemen oder Programmen. Weiters werden sie verwendet, um die Interaktionen zwischen verschiedenen Objekten in einem System zu visualisieren. Sie zeigen die Reihenfolge von Nachrichten, die zwischen den Objekten ausgetauscht werden, um eine bestimmte Funktionalität auszuführen.
 
 **Notationsformen:** 
 
 - Lebenslinie: repräsentieren beteiligte Objekte und werden als vertikale Linien dargestellt
-- Aktivierungsbalken: repräsentiert den Zeitraum, in dem ein Objekt eine bestimmte Funktion ausführt und wird horizontal auf der Lebenslinie des betreffenden Objekts dargestellt. 
-- Nachrichten: repräsentieren die Kommunikation zwischen den Objekten. Werden als Pfeile zwischen den Lebenslinien dargestellt.
-- Rückgaben: Rückgabe von Daten oder Ergebnissen von einem Objekt an ein anderes Objekt. Wird als gestrichelte Linie mit einem Pfeil dargestellt.
+- Interaktionsrahmen: Name, Übergabeparameter und Rückgabewert werden bestimmt. 
+- Nachrichten: repräsentieren die Kommunikation zwischen den Objekten. Werden als Pfeile zwischen den Lebenslinien dargestellt. (asynchron -> arbeitet weiter; synchron wartet auf Nachricht bis er weiter arbeitet)
+- Fragmente: Darstellung komplexer Strukturen (Schleife, Abbruch, Parallelität, Option, Alternative). Option = einseitige Verzweigung; Alternative = Mehrfachauswahl; 
 
-**Beispiel:** Einfaches Beispiel in Form von einer mathematischen Ganzzahl Rechnung. Es gibt zwei Zeichen (sign): das Plus (+) und das Minus (-); Die Zahlen beschränken sich von 0-9; Man kann sehr leicht erkennen, ob die gewünschte Funktionalität erreicht wurde.
+**Beispiel:** In diesem Diagramm wird ein Benutzer `User` dargestellt, der eine Anfrage an ein System `System` sendet. Das System aktiviert sich, um die Anfrage zu verarbeiten und gibt dann eine Antwort zurück. Schließlich wird das System deaktiviert.(Link: [UML - Sequenzdiagramm](http://www.bs7-augsburg.de/aicher/files_codeconcert/11Prog/ANPR_UML_Sequenzdiagramm.pdf))
 
-![Syntaxdiagramm](images/Syntaxdiagramm.PNG)
+![Sequenz](images/seq_beispiel.PNG)
 
 ### Zustandsdiagramm
 
@@ -219,15 +215,77 @@ Die Videothek unterstützt das Ausleihen von Filmen für registrierte Kunden. Da
 
 ![klassendiagramm_interpretieren](images/klassendiagramm_interpretieren.png)
 
-Interpretation: 
+Interpretation: abstrakte Oberklasse = Spielobjekt, es erben Raumschiff und abstrakte Klasse Laserschuss. Von abstrakter Klasse Laserschuss erben die Klassen LaserschussGross und LaserSchussKlein. Alle Klassen die von abstrakten Klassen geerbt haben müssen Methoden der abstrakten Klassen aus implementieren (zumindest die letzte Klasse die geerbt hat). Ein Raumschiff kann mehrere Laserschuss haben, drüber hinaus kann ein Raumschiff (0 bis 10) Schussvorrichtungen besitzen. Diese ist ebenfalls eine abstrakte Klasse, welche von der Klasse VorrichtungGross und VorrichtungKlein implementiert wird. Alle Instanzvariablen sind private gestellt, während alle angeführten Methoden die Sichtbarkeit public besitzen. 
+
+Das Spielobjekt besitzt Koordinaten und eine Geschwindigkeit, um die verfügbaren Objekte "zeichnen" bzw. darstellen zu können.
 
 ## Sequenzdiagramm 1
 
 ![sequenz_interpretieren](images/sequenz_interpretieren.png)
 
-Interpretation:
+Interpretation: Benutzeroberfläche mit JavaScript und man kann Kommentare posten. Eingabe von Daten -> validieren-> Anfrage an Proxy (Vermittler - Ajax Call) -> es können Fehlermeldungen zurückgegeben werden. Nach Erstellung von Ajax Call -> können weitere Fehler zurückgegeben werden.
+
+Von oben nach unten ist die Zeit ersichtlich -> die Methodenaufrufe warten auf die anderen Methoden damit diese sich selbst abschließen können (die Balken -> Lebenszeit der Methodenaufrufen). Opt = if abfrage...
+
+Bei keinen Fehler -> Proxy erstellt und an Post Comment Methode weiter gegeben. Json-File wird zurückgegeben.
 
 ## Sequenzdiagramm 2
 
 Die Videothek berechnet zuerst, ob das Guthaben des Kunden reicht um den Film zu bezahlen. Reicht das Guthaben nicht aus, wird stattdessen eine Aufforderung zum Ausfüllen des Guthabens angezeigt. Falls das aktuelle Guthaben des Mitglieds ausreicht, veranlasst die Videothek einen Streaming-Server einen Link für den Film zu generieren. Die Videothek zeigt dem Benutzer den Link an, unter dem der Film zugreifbar ist. Gehen Sie davon aus, dass sich das Mitglied bereits auf der Seite des gewünschten Films beendet.
 
+![seq_beispielVideothek](images/videothek_beispiel.png)
+
+## Aktivitätsdiagramm 1
+
+![aktivitaetsdiagramm1](images/aktivitaetsdiagramm1.png)
+
+Interpretation: Der Pendler wählt eine Reise aus und der Ticketautomat setzt einen Request ab. Ticketautomat gibt die Infos an den Pendler zurück. Dieser kann die Reise bestätigen und der Ticketautomat verarbeitet diesen Prozess erneut. Der Ticketautomat gibt einen Zahlungsrequest an den Pendler, dieser muss eine Zahlungsmöglichkeit angeben. Durch die gewählte Zahlungsmöglichkeit kann der Ticketautomat, den Zahlungsporzess verarbeiten. Bei Zahlung mit Karte -> Authentifizierung mit einer Bank oder einem Kreditinstitut dazwischen geschalten. Wenn alles ohne Fehler abgelaufen ist, wirft der Ticketautomat das Ticket aus. Der Pendler kann das Ticket entnehmen und falls er Bar bezahlt hat und zu viel Geld eingeworfen hat, bekommt er vom Ticketautomaten das Wechselgeld zurück. Zum Schluss zeigt der Ticketautomat ein "Thank you" an, und der Ausgangszustand wird wieder eingenommen.
+
+## Aktivitätsdiagramm 2
+
+Modellieren Sie schriftlich den folgenden Sachverhalt als Aktivitätsdiagramm: Ein Fluggast ist am Flughafen angekommen. Zur Überprüfung seines Tickets begibt er sich zum Schalter seiner Fluggesellschaft. Falls das Ticket in Ordnung ist, übergibt er am Schalter sein Gepäck. Falls mit dem Ticket etwas nicht stimmt, muss der Fluggast den Kundendienst konsultieren und er kann nicht mitfliegen. Das Gepäck wird zudem auf Übergewicht überprüft. Falls dem so ist, muss der Fluggast zusätzliche Kostenübernehmen. Falls aber das Gewicht in Ordnung ist, wird die Bordkarte ausgestellt.
+
+![akt_beispielFlug](images/flug.png)
+
+## Zustandsdiagramm 1
+
+![zustand_01](images/zustand_01.png)
+
+Bei diesem Beispiel handelt es sich um eine Darstellung eines Bankautomaten. Der Ausgangszustand ist ausgeschalten. Der Übergang in den nächsten Zustand lautet `turn on/startup` und bedeutet das man den Automaten einschaltet, der Zustand in dem sich der Bankautomat nun befindet ist der Selbsttest. Aus diesem Zustand können zwei verschiedene Zustände erreicht werden ->  bei Fehler = Out of Service und der nächste Übergang ist das Runterfahren des Systems; bei Erfolg = Idle (Leerlauf) und warten auf weitere Interaktion mit System. Vom Zustand Idle sind zwei weitere Zustände erreichbar, diese lauten: Maintenance (Wartung) und Service Customer mit dem Übergang der Karten Einfügung. 
+
+Zustand Maintenance: Der Zustand der Wartung kann zum Zustand Selbsttest führen oder bei einem Fehler zum Zustand Out of Service. Dabei kann ein erneuter Service ausgeführt werden, oder das System ausgeschalten werden. 
+
+Zustand Service Customer: Ist ein Zustand der weiter unterteilt werden kann und ist ein Composite State. Um in eines der unterteilten Zuständen zu gelangen muss die Karte gelesen und akzeptiert werden. Bei Akzeptierung, gelangt man in einen Ausgangszustand der sich Customer Authentication nennt. Danach folgen noch zwei Zustände bis man zum Endzustand gelangt. Bei Ankommen zum Endzustand innerhalb des Composite States, gelangt man erneut zum Idle Zustand. Bei Fehlern im Composite State gelangt man in den Out of Service Zustand. Bei Abbruch gelangt man in den Zustand Idle erneut. 
+
+## Zustandsdiagramm 2
+
+Entwerfen Sie ein Zustandsdiagramm für eine Bestellung auf Amazon. Modellieren Sie dazu die Zustände und  die Übergänge einer Bestellung vom Aufgeben der Bestellung bis hin zur Aushändigung des Paketes an den Kunden.
+
+![zustand_02](images/amazon.png)
+
+## C4-Diagramm
+
+Von Simon Brown entwickelt und ist ein Modell zur Strukturierung von Software-Systemen. Es besteht aus vier Abstraktionsebenen, die dazu dienen, die Komplexität von Software-Systemen zu reduzieren und ein gemeinsames Verständnis zwischen den beteiligten Personen zu schaffen. Weiters kann das C4-Modell genutzt werden, um eine gemeinsame Architektursprache zu schaffen und komplexe Systeme zu strukturieren. Es kann helfen, Missverständnisse und Konflikte zwischen verschiedenen Stakeholdern zu vermeiden und die Kommunikation innerhalb eines Teams zu verbessern.
+
+Die Abstraktionsebenen:
+
+1. Kontextebene: das System wird in seinen Kontext gestellt -> es wird gezeigt, mit welchen Systemen es interagiert und welche Rollen es in der Gesamtarchitektur spielt.
+2. Container-Ebene: Es werden die Container des Systems dargestellt -> Container sind eigenständige Laufzeitumgebungen, wie z.B. Anwendungs-Server, Datenbanken oder Browser. Sie enthalten eine oder mehrere Komponenten und bilden eine physische Grenze zwischen diesen Komponenten und anderen Systemen.
+3. Komponenten-Ebene: Einzelne Komponenten des Systems werden dargestellt. Eine Komponente ist eine logische Einheit, die eine bestimmte Funktion erfüllt. Sie kann innerhalb eines Containers oder über mehrere Container verteilt sein.
+4. Code-Ebene: Ist die Darstellung des Codes, welche eine Komponente implementiert. Dies kann ein zum Beispiel ein Klassen- oder Sequenzdiagramm sein.
+
+**Kontext-Diagramm:** 
+
+![krypto01](images/krypto01.png)
+
+**Container-Diagramm:** 
+
+![krypto02](images/krypto02.png)
+
+**Komponenten-Diagramm:**  
+
+![krypto03](images/krypto03.png)
+
+**Klassendiagramm:**
+
+![krypto05](images/krypto05.png)

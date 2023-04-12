@@ -1,0 +1,24 @@
+@startuml Kontext
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+LAYOUT_LEFT_RIGHT()
+title Komponentendiagramm Krypto
+
+SHOW_PERSON_OUTLINE()
+
+
+Container_Boundary(Kryptobörse, "Kryptobörse"){
+Container(springboot, "SpringBootApp", "Main", "Hauptkomponente der Anwendung")
+Container(controller, "Controller", "Komponente", "Verarbeitung der eingehenden Anfragen")
+Container(services, "Services", "Komponente", "Bearbeitung von Geschäftslogik")
+Container(repositories, "Repositories", "Komponente", "Zugriff auf die Datenbank durch JPA")
+}
+
+
+
+Rel(springboot, controller, "benutzt")
+Rel(controller, services, "benutzt")
+Rel(services,repositories , "benutzt")
+@enduml
+

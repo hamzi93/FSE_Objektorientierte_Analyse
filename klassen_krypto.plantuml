@@ -1,0 +1,29 @@
+@startuml Krypto
+class Crypto {
+  - price: Preis
+}
+
+class Preis {
+  // Attribute und Methoden von Preis
+}
+
+class Wallet {
+  - cryptoList: List<Crypto>
+  - user: Benutzer
+  - cryptoGuthaben: CryptoGuthaben
+}
+
+class Benutzer {
+  - wallets: List<Wallet>
+  // Attribute und Methoden von Benutzer
+}
+
+class CryptoGuthaben {
+  // Attribute und Methoden von CryptoGuthaben
+}
+
+Crypto --> Preis
+Wallet *-- Crypto
+Wallet *-- Benutzer
+Wallet o-- CryptoGuthaben
+@enduml

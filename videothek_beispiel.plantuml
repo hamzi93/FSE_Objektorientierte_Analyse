@@ -1,0 +1,18 @@
+@startuml Videothek
+actor Customer
+participant VideoStore
+participant StreamingServer
+Customer -> VideoStore: Film Request
+activate VideoStore
+VideoStore -> VideoStore: Prüfung Guthaben
+alt Guthaben reicht
+    VideoStore -> StreamingServer: Request Film Link generieren
+    activate StreamingServer
+    StreamingServer --> VideoStore: Film Link
+    deactivate StreamingServer
+    VideoStore -> Customer: Film Link
+else Guthaben reicht nicht
+    VideoStore -> Customer: Request Guthaben auffüllen
+end
+deactivate VideoStore
+@enduml

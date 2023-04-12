@@ -1,0 +1,29 @@
+@startuml Amazon
+[*] --> Bestellung : Bestellung aufgegeben
+Bestellung --> ZahlungAusstehend : Zahlung
+ZahlungAusstehend --> ZahlungErhalten : Zahlung entgegennehmen
+ZahlungErhalten --> Verschickt : Bestellung versenden
+Verschickt --> Geliefert : Bestellung anbringen
+Geliefert --> [*] : Bestellung abgeschlossen
+ZahlungAusstehend --> [*] : Zahlung fehlgeschlagen
+Verschickt --> [*] : Bestellung verloren
+Geliefert --> [*] : Zurücksenden
+note right of Bestellung
+- Verifizieren
+end note
+note right of ZahlungAusstehend
+- Zahlung verarbeiten
+- Zahlung verifizieren
+end note
+note right of ZahlungErhalten
+- Ware vorbereiten
+- Update Bestellungsstatus
+end note
+note right of Verschickt
+- Trackinginformation versenden
+end note
+note right of Geliefert
+- Lieferung bestätigen
+- Umgang mit Retouren
+end note
+@enduml

@@ -1,0 +1,17 @@
+@startuml Flug
+start
+:Fluggast begibt sich zum Schalter;
+if (Ticket in Ordnung?) then (ja)
+  :Fluggast gibt Gepäck ab;
+  if (Gepäck in Ordnung?) then (ja)
+    :Bordkarte ausstellen;
+  else (nein)
+    :Zusätzliche Kosten berechnen;
+    :Bordkarte ausstellen;
+  endif
+else (nein)
+  :Kundendienst konsultieren;
+  :Fluggast kann nicht mitfliegen;
+endif
+stop
+@enduml

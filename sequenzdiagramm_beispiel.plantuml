@@ -1,0 +1,9 @@
+@startuml Beispiel
+actor User
+participant System
+User -> System: Request
+activate System
+System -> System: Process request
+System --> User: Response
+deactivate System
+@enduml
